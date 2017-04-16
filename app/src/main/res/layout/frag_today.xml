@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/liner"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:background="#FF3333"
+        android:layout_height="50dp">
+        <ImageView
+            android:padding="0dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/today_left"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/return_but"/>
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/toa_year"
+            android:layout_marginLeft="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="2016年"/>
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toa_month"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="8月"/>
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toa_day"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="05日"/>
+        <ImageView
+            android:id="@+id/today_right"
+            android:padding="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:background="@mipmap/arraw_right"/>
+    </LinearLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recycle"
+        android:layout_below="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+
+    <Button
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/rili_logo"
+        android:layout_alignParentRight="true"
+        android:id="@+id/iv_rili_view"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+</RelativeLayout>
